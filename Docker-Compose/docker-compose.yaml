@@ -1,0 +1,12 @@
+
+version: '3.7'
+services: 
+  jenkins:
+    image: abimasantos/jenkins-jdk-8u191:v1
+    privileged: true
+    user: root
+    ports:
+      - '8080:8080'
+    volumes:
+      - '/opt/volumes/jenkins:/var/jenkins_home'
+      - '/var/run/docker.sock:/var/run/docker.sock'
