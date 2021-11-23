@@ -1,0 +1,1 @@
+Nesse laboratorio, utilizei o kind para criar o cluster
