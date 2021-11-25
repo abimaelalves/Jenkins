@@ -3,7 +3,8 @@
 ### Clonar projeto 
 ```$ git clone https://github.com/abimaelalves/Jenkins.git \
 ```
-```$ cd Jenkins/deploy-jenkins-full/
+```
+$ cd Jenkins/deploy-jenkins-full/
 ```
 
 ### Criar cluster
