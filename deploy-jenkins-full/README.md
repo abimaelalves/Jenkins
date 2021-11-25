@@ -1,8 +1,9 @@
 ##  Kind cluster k8s + Jenkins + Ingress
 
 ### Clonar projeto 
-$ git clone https://github.com/abimaelalves/Jenkins.git \
+```$ git clone https://github.com/abimaelalves/Jenkins.git \
 $ cd Jenkins/deploy-jenkins-full/
+```
 
 ### Criar cluster
 $ kind create cluster --config kind/kind.yaml --name k8s
