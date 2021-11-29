@@ -7,7 +7,6 @@ $ git clone https://github.com/abimaelalves/Jenkins.git
 $ cd Jenkins/deploy-jenkins-full/
 ```
 
-### Criar cluster
 ### Kind
 Para esse laboratorio, vamos configurar 4 nodes, o primeiro será o nó principal, do tipo control-plane e vamos enriquecer os metadados dos três outros nós do tipo workers com os labels topology.kubernetes.io/zone e topology.kubernetes.io/region. Desta forma vamos simular a alocação de nós em diferentes zonas e regiões. Em clusters hospedados na nuvem, AWS, GCP, Azure, esses labels já são definidos de acordo com a localidade das instâncias que compõem o cluster
 
@@ -50,7 +49,7 @@ O esperado é que, com duas réplicas, ele aloque primeiro nos nós que tenha to
 O modo soft ou preferível de alocação, na maioria dos casos, deve ser a melhor escolha. Ele garantirá que sua aplicação atinja o número de réplicas estipulado no deployment.
 
 
-
+### Criar cluster
 ```
 $ kind create cluster --config kind/kind.yaml --name k8s
 ```
