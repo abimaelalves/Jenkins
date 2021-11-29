@@ -10,7 +10,6 @@ $ cd Jenkins/deploy-jenkins-full/
 ### Kind
 Para esse laboratorio, vamos configurar 4 nodes, o primeiro será o nó principal, do tipo control-plane e vamos enriquecer os metadados dos três outros nós do tipo workers com os labels topology.kubernetes.io/zone e topology.kubernetes.io/region. Desta forma vamos simular a alocação de nós em diferentes zonas e regiões. Em clusters hospedados na nuvem, AWS, GCP, Azure, esses labels já são definidos de acordo com a localidade das instâncias que compõem o cluster
 
-
 LABELS DE TOPOLOGIA
 3 labels especifícas dos nós:
 
