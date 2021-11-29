@@ -22,6 +22,7 @@ Modo Soft
 O modo ou soft, não torna obrigatória a alocação de acordo com as regras pré-estabelecidas, e sim estabelece uma prioridade para a definição. Ela é caracterizada pela chave "preferredDuringSchedulingIgnoredDuringExecution" e podemos utilizar os mesmos valores do modo hard para a topologyKey.
 
 Determinar pesos para priorizar topologyKey: topology.kubernetes.io/regio e em menor prioridade topologyKey: topology.kubernetes.io/zone
+```
       affinity:
         podAntiAffinity:
           preferredDuringSchedulingIgnoredDuringExecution:
@@ -43,7 +44,7 @@ Determinar pesos para priorizar topologyKey: topology.kubernetes.io/regio e em m
                       values:
                         - lorem-ipsum
                 topologyKey: topology.kubernetes.io/zone
-
+```
 O esperado é que, com duas réplicas, ele aloque primeiro nos nós que tenha topology.kubernetes.io/region=west e outro topology.kubernetes.io/region=east
 
 O modo soft ou preferível de alocação, na maioria dos casos, deve ser a melhor escolha. Ele garantirá que sua aplicação atinja o número de réplicas estipulado no deployment.
