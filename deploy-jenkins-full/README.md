@@ -5,9 +5,7 @@ O objetivo deste artigo é entender como funciona o recurso de anti afinidade en
 ### Ambiente de teste
 Para isso iremos utilizar Kind. O Kind, significa Kubernetes in Docker, ou seja, ele irá levantar alguns containers e recursos de rede, permitindo o acesso ao cluster através do kubectl.
 
-Até agora vimos dois pré-requisitos, o kind e o kubectl. Você pode conferir como instalar essas ferramentas nos respectivos sites indicados acima.
-
-Tendo-os instalados vamos a configuração do cluster. Em uma pasta crie um arquivo chamado cluster_config.yaml. Ele vai ter o seguinte conteúdo:
+Em uma pasta crie um arquivo chamado cluster_config.yaml. Ele vai ter o seguinte conteúdo:
 
 ```
 kind: Cluster
