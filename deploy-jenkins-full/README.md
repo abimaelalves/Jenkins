@@ -64,7 +64,7 @@ service/kubernetes   ClusterIP   10.96.0.1      <none>        443/TCP           
 Para esse laboratorio, foi preciso realizar uma alteração no manifesto do ingress-controller.yaml, com intuito de simularmos um LB em prod, mas nesse caso só irá funcionar para fins de estudo, no arquivo ingress-controller.yaml foi configurado em NodePort o item externalIPs, onde informamos o IP do cluster, no caso você precisará mudar o IP para o do seu cluster K8s ($ kubectl get nodes -o wide). Verifique o arquivo ingress-controller.yaml antes de aplica-lo
 
 ```
-$ kubectl apply -f k8s/ingress-controller.yaml \
+$ kubectl apply -f k8s/ingress-controller.yaml 
 ```
 
 Assim que aplicar o arquivo acima, é necessario registrar um dominio dentro do etc/hosts, (O IP 172.18.0.4 é o IP do meu cluster K8s) exemplo: 
