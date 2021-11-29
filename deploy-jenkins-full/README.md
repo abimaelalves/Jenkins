@@ -87,5 +87,5 @@ Aplicar ingress (alterar conforme sua necessidade)
 $ kubectl apply -f k8s/ingress.yaml
 ```
 
-Testar acesso no navegador
+Testar acesso no navegador\
 jenkins-local.com.br
