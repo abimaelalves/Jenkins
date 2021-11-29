@@ -36,7 +36,9 @@ nodes:
 ```          
 O primeiro será o nó principal, do tipo control-plane e vamos enriquecer os metadados dos três outros nós do tipo workers com os labels topology.kubernetes.io/zone e topology.kubernetes.io/region. Desta forma vamos simular a alocação de nós em diferentes zonas e regiões. Em clusters hospedados na nuvem, AWS, GCP, Azure, esses labels já são definidos de acordo com a localidade das instâncias que compõem o cluster.
 
+```
 kind create cluster --config config_artigo.yaml --name k8s
+```
 Precisamos checar o contexto do kubectl e verificar se conseguimos acessar nosso cluster:
 
 kubectl config current-context
