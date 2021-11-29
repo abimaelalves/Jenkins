@@ -61,7 +61,7 @@ service/kubernetes   ClusterIP   10.96.0.1      <none>        443/TCP           
 
 ### Por Ultimo criar o ingress-controller e o ingress
 
-Detalhe: Para esse laboratorio, foi preciso realizar uma alteração no manifesto do ngress-controller.yaml, com intuito de simularmos um LB em prod, mas nesse caso só irá funcionar para fins de estudo, no arquivo ingress-controller.yaml foi configurado em NodePort o item externalIPs, onde informamos o IP do cluster, no caso você precisará mudar o IP para o do seu cluster K8s ($ kubectl get nodes -o wide). Verifique o arquivo ingress-controller.yaml antes de aplica-lo
+Para esse laboratorio, foi preciso realizar uma alteração no manifesto do ngress-controller.yaml, com intuito de simularmos um LB em prod, mas nesse caso só irá funcionar para fins de estudo, no arquivo ingress-controller.yaml foi configurado em NodePort o item externalIPs, onde informamos o IP do cluster, no caso você precisará mudar o IP para o do seu cluster K8s ($ kubectl get nodes -o wide). Verifique o arquivo ingress-controller.yaml antes de aplica-lo
 
 ```
 $ kubectl apply -f k8s/ingress-controller.yaml \
