@@ -22,10 +22,10 @@ nodes:
         kubeletExtraArgs:
           node-labels: "topology.kubernetes.io/zone=west-1c,topology.kubernetes.io/region=west,ingress-ready=true"
   extraMounts:
-  - hostPath: /opt/volumes/jenkins          # Volume que será mapeado no host local
-    containerPath: /volume_jenkins          # volume mapeado dentro do container do container do kind | mapeado no  manifesto pv.yaml em "path"
-  - hostPath: /var/run/docker.sock          # Mapeando o volume local do docker.sock, essa opção faz com que o podtemplate consiga executar comandos docker
-    containerPath: /var/run/docker.sock     # volume mapeado dentro do container do container do kind e consiga executar comandos docker
+  - hostPath: /opt/volumes/jenkins          
+    containerPath: /volume_jenkins          
+  - hostPath: /var/run/docker.sock          
+    containerPath: /var/run/docker.sock     
 - role: worker
   kubeadmConfigPatches:
     - |
@@ -42,10 +42,10 @@ nodes:
     protocol: TCP
     listenAddress: "0.0.0.0"  
   extraMounts:
-    - hostPath: /opt/volumes/jenkins          # Volume que será mapeado no host local
-      containerPath: /volume_jenkins          # volume mapeado dentro do container do container do kind | mapeado no  manifesto pv.yaml em "path"
-    - hostPath: /var/run/docker.sock          # Mapeando o volume local do docker.sock, essa opção faz com que o podtemplate consiga executar comandos docker
-      containerPath: /var/run/docker.sock     # volume mapeado dentro do container do container do kind e consiga executar comandos docker
+    - hostPath: /opt/volumes/jenkins          
+      containerPath: /volume_jenkins          
+    - hostPath: /var/run/docker.sock          
+      containerPath: /var/run/docker.sock     
 networking:
   apiServerAddress: 192.168.0.8    # ip da maquina local
   apiServerPort: 6443          
