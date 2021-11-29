@@ -39,6 +39,7 @@ O primeiro será o nó principal, do tipo control-plane e vamos enriquecer os me
 ```
 kind create cluster --config config_artigo.yaml --name k8s
 ```
+
 Precisamos checar o contexto do kubectl e verificar se conseguimos acessar nosso cluster:
 
 kubectl config current-context
