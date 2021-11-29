@@ -18,7 +18,7 @@ topology.kubernetes.io/zone
 topology.kubernetes.io/region
 
 Modo Soft
-O modo ou soft, não torna obrigatória a alocação de acordo com as regras pré-estabelecidas, e sim estabelece uma prioridade para a definição. Ela é caracterizada pela chave "preferredDuringSchedulingIgnoredDuringExecution" e podemos utilizar os mesmos valores do modo hard para a topologyKey.
+O modo soft, não torna obrigatória a alocação de acordo com as regras pré-estabelecidas, e sim estabelece uma prioridade para a definição. Ela é caracterizada pela chave "preferredDuringSchedulingIgnoredDuringExecution" e podemos utilizar os mesmos valores do modo hard para a topologyKey.
 
 Determinar pesos para priorizar topologyKey: topology.kubernetes.io/regio e em menor prioridade topologyKey: topology.kubernetes.io/zone
 ```
