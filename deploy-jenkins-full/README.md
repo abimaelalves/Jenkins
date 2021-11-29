@@ -3,7 +3,7 @@
 O objetivo deste artigo é entender como funciona o recurso de anti afinidade entre pods e como os diferentes modos, soft e hard, podem influenciar na disponibilidade de uma aplicação que esteja sendo executada no kubernetes. Veremos os diferentes modos de anti afinidade e faremos uma sequência de testes para entender seus mais variados comportamentos.
 
 ### Ambiente de teste
-Para realizarmos as simulações propostas ao longo deste artigo iremos precisar de um cluster Kubernetes. Para isso iremos utilizar Kind. O Kind, significa Kubernetes in Docker, ou seja, ele irá levantar alguns containers e recursos de rede, permitindo o acesso ao cluster através do kubectl.
+Para isso iremos utilizar Kind. O Kind, significa Kubernetes in Docker, ou seja, ele irá levantar alguns containers e recursos de rede, permitindo o acesso ao cluster através do kubectl.
 
 Até agora vimos dois pré-requisitos, o kind e o kubectl. Você pode conferir como instalar essas ferramentas nos respectivos sites indicados acima.
 
