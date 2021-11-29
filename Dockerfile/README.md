@@ -6,7 +6,7 @@ $ cd Jenkins/Dockerfile/
 
 ### Buildar Imagem
 ```
-$ docker build namespace/name_repository:tag .
+$ docker build -t namespace/name_repository:tag .
 ```
 ### Subir para o dockerhub
 ```

@@ -1,7 +1,7 @@
 FROM jenkins/jenkins:lts-jdk11
 USER root 
 WORKDIR /app
-RUN apt-get update -y && apt-get install -y curl wget tar vim software-properties-common -y  &&\
+RUN apt-get update -y && apt-get install -y telnet curl wget tar vim software-properties-common iputils-ping net-tools &&\
      # INSTALL DOCKER
     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add - && \
     add-apt-repository \
