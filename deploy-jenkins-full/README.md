@@ -67,7 +67,16 @@ Para esse laboratorio, foi preciso realizar uma alteração no manifesto do ingr
 $ kubectl apply -f k8s/ingress-controller.yaml 
 ```
 
-Assim que aplicar o arquivo acima, é necessario registrar um dominio dentro do etc/hosts, (O IP 172.18.0.4 é o IP do meu cluster K8s) exemplo: 
+Verificar os pods do namespace ingress-nginx que foi criado acima
+```
+kubectl get pod -n ingress-nginx
+NAME                                        READY   STATUS      RESTARTS   AGE
+ingress-nginx-admission-create-6w5ww        0/1     Completed   0          63s
+ingress-nginx-admission-patch-wms75         0/1     Completed   0          63s
+ingress-nginx-controller-5f6d6c756c-cwlk2   1/1     Running     0          63s
+```
+
+Feito isso é necessario registrar um dominio dentro do etc/hosts, (O IP 172.18.0.4 é o IP do meu cluster K8s) exemplo: 
 ```
 $ vim /etc/hosts
 172.18.0.4      jenkins-local.com.br
