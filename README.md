@@ -20,4 +20,4 @@
 1. https://github.com/abimaelalves/Jenkins/blob/main/Docker-Compose/README.md
 
 ### Terceiro cenario, subindo cluster com kind e deploy do jenkins com ingress 
-1. https://github.com/abimaelalves/Jenkins/blob/main/deploy-jenkins-full/README.md
+1. https://github.com/abimaelalves/Jenkins/tree/main/k8s
